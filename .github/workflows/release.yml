@@ -1,10 +1,10 @@
-name: Releaser
+name: Release
 
 on:
   workflow_dispatch:
 
 jobs:
-  goreleaser:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
