@@ -14,7 +14,7 @@ make -f ./Makefile.cross-compiles
 rm -rf ./packages
 mkdir ./packages
 
-os_all='linux windows'
+os_all='linux windows android'
 arch_all='386 amd64 arm arm64'
 
 for os in $os_all; do
