@@ -22,10 +22,8 @@ jobs:
           chmod a+x ./package.sh
           ./package.sh
 
-      - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v5
+      - name: Release
+        uses: actions/upload-artifact@v4
         with:
-          version: latest
-          args: release --clean --release-notes=./Release.md
-        env:
-          GITHUB_TOKEN: ${{ secrets.GPR_TOKEN }}
+          name: frp
+          path: packages
